@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/calculadora.css">
+	
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+
+	<script src="js/calculadora.js"></script>
+
+	<title>Calculadora</title>
+</head>
+
+<body>
+
+	<header>
+
+	</header>				
+	
+	<div id="content">
+
+		<div class="secao">
+			<input type="text" maxlength = "7" class="display" id="Inp_Display" disabled="">
+		</div>
+
+		<div class="secao">
+			<div id="flex_2_linha">
+				<div class="div-2l-normal"><button class="btn-on" id="Btn_On" value="on" onclick="btnAcao_Click(this)">ON/CE</button></div>
+				<div class="div-2l-normal"><button class="btn-off" id="Btn_Off" value="off" onclick="btnAcao_Click(this)">OFF</button></div>
+				<div class="div-2l-normal"><button class="btn-mrc" id="Btn_MRC" value="mrc" onclick="btnAcao_Click(this)">MRC</button></div>
+				<div class="div-2l-normal"><button id="Btn_Raiz" value="√" onclick="btnOperacao_Click(this)">√</button></div>
+				<div class="div-2l-normal"><button class="btn-mrc" id="Btn_Msub" value="msub" onclick="btnAcao_Click(this)">M-</button></div>
+				<div class="div-2l-normal"><button id="Btn_Porc" value="%" onclick="btnOperacao_Click(this)">%</button></div>
+				<div class="div-2l-normal"><button class="btn-mrc" id="Btn_Madc" value="madc" onclick="btnAcao_Click(this)">M+</button></div>
+				<div class="div-2l-normal"><button id="Btn_Div" value="/" onclick="btnOperacao_Click(this)">÷</button></div>
+			</div>
+
+			<div id="flex_2_linha">
+				<div class="div-2l-normal"><button id="Btn_7" value="7" onclick="btnDigito_Click(this)">7</button></div>
+				<div class="div-2l-normal"><button id="Btn_4" value="4" onclick="btnDigito_Click(this)">4</button></div>
+				<div class="div-2l-normal"><button id="Btn_8" value="8" onclick="btnDigito_Click(this)">8</button></div>
+				<div class="div-2l-normal"><button id="Btn_5" value="5" onclick="btnDigito_Click(this)">5</button></div>
+				<div class="div-2l-normal"><button id="Btn_9" value="9" onclick="btnDigito_Click(this)">9</button></div>
+				<div class="div-2l-normal"><button id="Btn_6" value="6" onclick="btnDigito_Click(this)">6</button></div>
+				<div class="div-2l-normal"><button id="Btn_Mult" value="x" onclick="btnOperacao_Click(this)">X</button></div>
+				<div class="div-2l-normal"><button id="Btn_Sub" value="-" onclick="btnOperacao_Click(this)">-</button></div>
+			</div>
+
+			<div id="flex_2_linha">
+				<div class="div-2l-normal"><button id="Btn_1" value="1" onclick="btnDigito_Click(this)">1</button></div>
+				<div class="div-2l-normal"><button id="Btn_0" value="0" onclick="btnDigito_Click(this)">0</button></div>
+				<div class="div-2l-normal"><button id="Btn_2" value="2" onclick="btnDigito_Click(this)">2</button></div>
+				<div class="div-2l-normal"><button id="Btn_Ponto" value="." onclick="btnDigito_Click(this)">•</button></div>
+				<div class="div-2l-normal"><button id="Btn_3" value="3" onclick="btnDigito_Click(this)">3</button></div>
+				<div class="div-2l-normal"><button id="Btn_Igual" onclick="btnIgual_Click(this)">=</button></div>
+				<div class="div-2l-normal maior"><button class="btn-adicao" id="Btn_Adc" value="+" onclick="btnOperacao_Click(this)">+</button></div>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
